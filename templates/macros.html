@@ -275,7 +275,7 @@
 
 {% macro presentation_metadata(page) %}
 <span class="icon-text has-text-grey">
-  <span>Presented <time datetime="{{ page.date }}">{{ page.date | date(format='%B %d, %Y') }}</time> at the {{
+  <span>Presented <time datetime="{{ page.date }}">{{ page.date | date(format='%B %d, %Y') }}</time> {{
     page.extra.venue }}</span>
 </span>
 {% endmacro %}
