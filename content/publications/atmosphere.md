@@ -5,10 +5,10 @@ date=2023-10-23
 template="publication.html"
 
 extra.journal="KISV '23: Proceedings of the 1st Workshop on Kernel Isolation, Safety and Verification"
+extra.kind = "publication"
 
 [taxonomies]
-# categories = ["Sample Post"]
-# tags = ["post", "lorem"]
+categories = ["Formal Verification"]
 +++
 
 This work applies a linearly typed extension of Rust and a newly developed SMT Verifier, Verus, to formally verify low-level operating system code.

@@ -206,6 +206,19 @@
 {% endmacro %}
 
 {% macro page_publish_metadata(page) %}
+{% if page.extra.kind %}
+{% if page.extra.kind == "publication"%}
+<span class="icon-text has-text-grey">
+  <span>Published <time datetime="{{ page.date }}">{{ page.date | date(format='%B %d, %Y') }}</time> in {{
+    page.extra.journal }}</span>
+</span>
+{% elif page.extra.kind == "presentation" %}
+<span class="icon-text has-text-grey">
+  <span>Presented <time datetime="{{ page.date }}">{{ page.date | date(format='%B %d, %Y') }}</time> {{page.extra.venue
+    }}</span>
+</span>
+{% endif %}
+{% else %}
 <span class="icon-text has-text-grey">
   <span class="icon">
     <i class="fas fa-user"></i>
@@ -216,19 +229,41 @@
   </span>
   <span><time datetime="{{ page.date }}">{{ page.date | date(format='%B %d, %Y') }}</time></span>
 </span>
+{% endif %}
 {% endmacro %}
 
 {% macro page_content_metadata(page) %}
 <span class="icon-text has-text-grey">
-  <span class="icon">
+  <!-- <span class="icon">
     <i class="far fa-clock"></i>
   </span>
   <span>{{ page.reading_time }} min,</span>
   <span class="icon">
     <i class="fas fa-pencil-alt"></i>
   </span>
-  <span>{{ page.word_count }} words</span>
+  <span>{{ page.word_count }} words</span> -->
 </span>
+{% endmacro %}
+
+{% macro page_expand_url(page) %}
+{% if page.extra.kind %}
+{% if page.extra.kind == "presentation" %}
+<a class="has-text-danger-dark has-text-weight-semibold" href='{{ page.extra.url }}' target="_blank"
+  rel="noopener noreferrer">
+  View
+  <span class="icon is-small">
+    <i class="fas fa-arrow-right fa-xs"></i>
+  </span>
+</a>
+{% elif page.extra.kind == "publication" %}
+<a class="has-text-danger-dark has-text-weight-semibold" href='{{ page.permalink }}'>
+  Read More
+  <span class="icon is-small">
+    <i class="fas fa-arrow-right fa-xs"></i>
+  </span>
+</a>
+{% endif %}
+{% endif %}
 {% endmacro %}
 
 {% macro publication_metadata(page) %}
@@ -238,10 +273,10 @@
 </span>
 {% endmacro %}
 
-{% macro publication_content_metadata(page) %}
+{% macro presentation_metadata(page) %}
 <span class="icon-text has-text-grey">
-  <span>Published <time datetime="{{ page.date }}">{{ page.date | date(format='%B %d, %Y') }}</time> in {{
-    page.extra.journal }}</span>
+  <span>Presented <time datetime="{{ page.date }}">{{ page.date | date(format='%B %d, %Y') }}</time> at the {{
+    page.extra.venue }}</span>
 </span>
 {% endmacro %}
 

@@ -13,6 +13,11 @@ default_language = "en"
 # For overriding the default output directory `public`, set it to another value (e.g.: "docs")
 output_dir = "docs"
 
+taxonomies = [
+    { name = "categories", feed = true, paginate_by = 10 },
+    { name = "tags", feed = true, paginate_by = 10 },
+]
+
 
 [markdown]
 # Whether to do syntax highlighting
@@ -72,6 +77,7 @@ navbar_items = [
     { code = "en", nav_items = [
         { url = "$BASE_URL/", name = "Home" },
         { url = "$BASE_URL/publications", name = "Publications" },
+        { url = "$BASE_URL/presentations", name = "Presentations" },
         { url = "$BASE_URL/cv/MesicekCV.pdf", name = "CV", new = true },
         # { url = "$BASE_URL/tags", name = "Tags" },
         # { url = "$BASE_URL/categories", name = "Categories" },
