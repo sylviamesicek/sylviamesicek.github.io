@@ -22,7 +22,7 @@
         <link rel="alternate" type="text/html" href="https://sylviamesicek.github.io/presentations/urs2023/"/>
         <id>https://sylviamesicek.github.io/presentations/urs2023/</id>
         
-        <summary type="html">&lt;p&gt;Culmination of my first summer of work with Dr. John Belz, focused on my implementation of an adaptive multigrid solver for generating axsymmetric initial data via the Hamiltonian constraint.&lt;&#x2F;p&gt;</summary>
+        <summary type="html">&lt;p&gt;Culmination of my first summer of work with Dr. John Belz, during which I implemented an adaptive multigrid solver capable of generating axisymmetric initial data via the Hamiltonian constraint.&lt;&#x2F;p&gt;</summary>
         
     </entry>
 </feed>

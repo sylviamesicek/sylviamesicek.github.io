@@ -12,6 +12,6 @@ categories = ["Coursework"]
 tags = ["Oral Presentation"]
 +++
 
-A presentation I gave in my stellar astronomy class about Type Ia supernovae progenitors, focused on double-degenerate mergers. 
+A presentation I gave in my stellar astronomy class about Type Ia supernovae progenitors, focused on double-degenerate mergers.
 
 <!-- more -->

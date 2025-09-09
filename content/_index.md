@@ -1,6 +1,6 @@
 +++
 title = "Sylvia Mesicek"
-description = "Student Researcher at the Unversity of Utah"
+description = "Student Researcher at the University of Utah"
 +++ 
 
 Hello! I am an undergraduate student majoring in Physics and Mathematics at the University of Utah. I am pursuing a career in computational astrophysics and have a particular fascination for gravitation and black hole physics.
