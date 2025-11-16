@@ -1,0 +1,49 @@
+@charset "utf-8"
+
+$cut: 600px
+
+#research-sec
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 100%
+    max-width: 960px
+    margin: 0 auto
+    @media only screen and (min-width: $cut)
+        width: 100%
+
+.research-projects
+    margin: 20px auto
+    @media only screen and (min-width: $cut)
+        display: flex
+        align-items: stretch
+    img
+        max-width: 100%
+        height: auto
+        border-radius: 5px
+    h5
+        margin: 0
+    p
+        margin-right: 5px
+
+.research-contents
+    margin-bottom: 5%
+    margin-right: 5%
+    @media only screen and (min-width: $cut)
+        display: flex
+        flex: 1
+        flex-direction: column
+        justify-content: center
+    p
+        vertical-align: middle
+
+.research-images-right
+    @media only screen and (min-width: $cut)
+        display: flex
+        flex: 1
+        flex-direction: column
+        justify-content: center
+    img
+        vertical-align: center
+        @media only screen and (min-width: $cut)
+            float: right
