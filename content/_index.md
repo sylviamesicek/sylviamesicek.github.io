@@ -22,7 +22,8 @@ description = "Student Researcher at the University of Utah"
             </p>
         </div>
         <div class="research-images-right">
-            <img src="/img/axiprolate_collapse.gif" alt="Axiprolate collapse gif" />
+            <img class="only-light" src="/img/axiprolate_collapse.gif" alt="Axiprolate collapse gif" />
+            <img class="only-dark" src="/img/axiprolate_collapse_dark.gif" alt="Axiprolate collapse gif" style="display:none" />
         </div>
     </div>
     <div class="research-projects">

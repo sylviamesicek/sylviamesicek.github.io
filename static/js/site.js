@@ -177,6 +177,12 @@ function documentReadyCallback() {
     document.querySelectorAll("img, picture, video, pre").forEach(img => img.setAttribute("theme", "dark"));
     document.querySelectorAll(".vimeo, .youtube, .chart").forEach(video => video.setAttribute("theme", "dark"));
     document.getElementById("dark-mode").setAttribute("title", "Switch to light theme");
+
+    document.querySelectorAll(".only-light").forEach(elem => elem.style.display = "none")
+    document.querySelectorAll(".only-dark").forEach(elem => elem.style.display = "block")
+  } else {
+    document.querySelectorAll(".only-light").forEach(elem => elem.style.display = "block")
+    document.querySelectorAll(".only-dark").forEach(elem => elem.style.display = "none")
   }
 
   document.querySelector(".navbar-burger").addEventListener("click", () => {
@@ -225,6 +231,9 @@ function documentReadyCallback() {
       document.querySelectorAll(".vimeo, .youtube, .chart").forEach(video => video.setAttribute("theme", "dark"));
 
       document.getElementById("dark-mode").setAttribute("title", "Switch to light theme");
+
+      document.querySelectorAll(".only-light").forEach(elem => elem.style.display = "none")
+      document.querySelectorAll(".only-dark").forEach(elem => elem.style.display = "block")
     } else {
       localStorage.setItem("theme", "light");
       document.body.removeAttribute("theme", "dark");
@@ -232,7 +241,12 @@ function documentReadyCallback() {
       document.querySelectorAll(".vimeo, .youtube, .chart").forEach(video => video.removeAttribute("theme", "dark"));
 
       document.getElementById("dark-mode").setAttribute("title", "Switch to dark theme");
+
+      document.querySelectorAll(".only-light").forEach(elem => elem.style.display = "block")
+      document.querySelectorAll(".only-dark").forEach(elem => elem.style.display = "none")
     }
+
+
   });
 
   if (typeof mermaid !== "undefined") {
