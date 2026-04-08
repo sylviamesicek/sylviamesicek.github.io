@@ -123,6 +123,10 @@ orcid = "0009-0002-3259-1282"
 # [extra.analytics]
 # google = "<your_gtag>"
 
+# Adding google site verification
+[extra.verification]
+google = "PU0fbbwKZUhuBbWPtN8Z4wx6fgcqcCGrTD8zhqL4ToM"
+
 # To add disqus comments
 # [extra.commenting]
 # disqus = "<your_disqus_shortname>"

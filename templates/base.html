@@ -9,6 +9,9 @@
   <meta content="#ffffff" name="theme-color" />
   <meta content="#da532c" name="msapplication-TileColor" />
 
+  {% block meta %}
+  {% endblock %}
+
   {% if config.extra.favicon.webmanifest %}
   <link href='{{ config.extra.favicon.webmanifest }}' rel="manifest" />
   {% endif %}
