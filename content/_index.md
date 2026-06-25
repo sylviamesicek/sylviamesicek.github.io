@@ -1,11 +1,11 @@
 +++
 title = "Sylvia Mesicek"
-description = "Student Researcher at the University of Utah"
+description = "Research Assistant at the University of Utah"
 +++ 
 
 <section id="research-sec">
     <p>
-    Hello! I am an undergraduate student majoring in Physics and Mathematics at the University of Utah. I am pursuing a career in computational astrophysics and have a particular fascination for gravitation and black hole physics.
+    Hello! I am a post-baccalaureate researcher with honors degrees in Physics and Mathematics at the University of Utah. I am pursuing a career in computational astrophysics and have a particular fascination for gravitation and black hole physics.
     </p>
     <div>
         <h2>Research</h2>
@@ -48,6 +48,54 @@ description = "Student Researcher at the University of Utah"
     </div>
 </section>
 <section>
+</section>
+
+<section id="showcase-sec">
+    <br>
+    <p></p>
+    <div>
+        <h2>Showcase</h2>
+    </div>
+    <p>
+    I enjoy working on additional hobby projects related to astronomy, mathematics, and programming.
+    </p>
+    <div class="showcase-projects">
+        <div class="showcase-contents">
+            <h4><span class="icon"><i class="fas fa-computer"></i></span> Realtime Rendering</h4>
+            <p>I've implemented various photorealistic rendering algorithms from scratch in Rust and gathered them into a single application called <code>stellar</code>. This codebase supports relativistic raytracing, fractal raymarching, panoramic skyboxes, a post-processing pipeline, and physically-based star rendering. 
+            </p>
+            <div>
+                <a class="button"  href="https://github.com/sylviamesicek/stellar" target="_blank">Codebase on Github</a>
+            </div>
+        </div>
+        <div class="showcase-images-right">
+            <div class="slideshow-container">
+                <div class="slideshow-slides">
+                    <img src="/img/schwarschild3d.png"      style="width:100%">
+                    <div class="slideshow-numbertext        no-theme-invert">1 / 3</div>
+                    <div class="slideshow-text      no-theme-invert">Raytraced Schwarzschild Black Hole</div>
+                </div>
+                <div class="slideshow-slides">
+                    <img src="/img/star.png" style="width:100%">
+                    <div class="slideshow-numbertext no-theme-invert">2 / 3</div>
+                    <div class="slideshow-text no-theme-invert">Photorealistic Star Rendering</div>
+                </div>
+                <div class="slideshow-slides">
+                    <img src="/img/mandelbulb.png" style="width:100%">
+                    <div class="slideshow-numbertext no-theme-invert">3 / 3</div>
+                    <div class="slideshow-text no-theme-invert">Raymarched Mandelbulb</div>
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="slideshow-prev no-theme-invert" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="slideshow-next no-theme-invert" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <!-- <div style="text-align:center; margin-top: 0px;">
+                <span class="slideshow-dot" onclick="currentSlide(1)"></span>
+                <span class="slideshow-dot" onclick="currentSlide(2)"></span>
+                <span class="slideshow-dot" onclick="currentSlide(3)"></span>
+            </div> -->
+        </div>
+    </div>
 </section>
 
 <!-- 

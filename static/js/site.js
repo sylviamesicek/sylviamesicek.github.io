@@ -180,9 +180,11 @@ function documentReadyCallback() {
 
     document.querySelectorAll(".only-light").forEach(elem => elem.style.display = "none")
     document.querySelectorAll(".only-dark").forEach(elem => elem.style.display = "block")
+    document.querySelectorAll(".no-theme-invert").forEach(elem => elem.style.filter = "invert(1) hue-rotate(180deg)")
   } else {
     document.querySelectorAll(".only-light").forEach(elem => elem.style.display = "block")
     document.querySelectorAll(".only-dark").forEach(elem => elem.style.display = "none")
+    document.querySelectorAll(".no-theme-invert").forEach(elem => elem.style.filter = "none")
   }
 
   document.querySelector(".navbar-burger").addEventListener("click", () => {
@@ -234,6 +236,7 @@ function documentReadyCallback() {
 
       document.querySelectorAll(".only-light").forEach(elem => elem.style.display = "none")
       document.querySelectorAll(".only-dark").forEach(elem => elem.style.display = "block")
+      document.querySelectorAll(".no-theme-invert").forEach(elem => elem.style.filter = "invert(1) hue-rotate(180deg)")
     } else {
       localStorage.setItem("theme", "light");
       document.body.removeAttribute("theme", "dark");
@@ -244,6 +247,7 @@ function documentReadyCallback() {
 
       document.querySelectorAll(".only-light").forEach(elem => elem.style.display = "block")
       document.querySelectorAll(".only-dark").forEach(elem => elem.style.display = "none")
+      document.querySelectorAll(".no-theme-invert").forEach(elem => elem.style.filter = "none")
     }
 
 
@@ -342,3 +346,32 @@ if (document.readyState === 'loading') {  // Loading hasn't finished yet
 } else {  // `DOMContentLoaded` has already fired
   documentReadyCallback();
 }
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slideshow-slides");
+  let dots = document.getElementsByClassName("slideshow-dot");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+} 
