@@ -13,7 +13,8 @@ categories = ["Formal Verification"]
 
 This work applies a linearly typed extension of Rust and a newly developed SMT Verifier, Verus, to formally verify low-level operating system code.
 
-**Citation**: *Atmosphere: Towards Practical Verified Kernels in Rust*. Xiangdong C., Zhaofeng L., Mesicek L., Narayanan V., and Burtsev A. Published in _KISV '23: Proceedings of the 1st Workshop on Kernel Isolation, Safety and Verification_.
+<!-- **Citation**: *Atmosphere: Towards Practical Verified Kernels in Rust*. Xiangdong C., Zhaofeng L., Mesicek L., Narayanan V., and Burtsev A. Published in _KISV '23: Proceedings of the 1st Workshop on Kernel Isolation, Safety and Verification_. -->
+**Citation**:Chen, X., Li, Z., Mesicek, L., Narayanan, V., & Burtsev, A. (2023). Atmosphere: Towards Practical Verified Kernels in Rust. *Proceedings of the 1St Workshop on Kernel Isolation, Safety and Verification*, 9–17. https://doi.org/10.1145/3625275.3625401
 
 **DOI**: [10.1145/3625275.3625401](https://doi.org/10.1145/3625275.3625401)
 
